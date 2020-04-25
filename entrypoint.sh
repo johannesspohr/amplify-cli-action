@@ -47,10 +47,12 @@ echo "amplify version $(amplify --version)"
 case $5 in
 
   push)
+    npm install
     amplify push $9 --yes
     ;;
 
   publish)
+    npm install
     amplify publish $9 --yes
     ;;
 
