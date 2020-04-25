@@ -48,11 +48,13 @@ case $5 in
 
   push)
     yarn --frozen-lockfile
+    yarn build-lambdas
     amplify push $9 --yes
     ;;
 
   publish)
     yarn --frozen-lockfile
+    yarn build-lambdas
     amplify publish $9 --yes
     ;;
 
